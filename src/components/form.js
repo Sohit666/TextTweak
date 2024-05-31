@@ -56,6 +56,7 @@ const Form = (props) => {
                     rows="6"
                     value={text}
                     onChange={handleChange}
+                    placeholder='Enter your text here...'
                 ></textarea>
             </div>
             <button type="button" className="btn btn-primary" onClick={onclickup}>UpperCase</button>
@@ -66,6 +67,8 @@ const Form = (props) => {
 
             <h1 className={`${linkTextColor}`}>Summary</h1>
             <p className={`${linkTextColor}`}>Words {text.split(/\s+/).filter(word => word.length > 0).length} And Characters {text.length}</p>
+            <h2 className={`${linkTextColor}`}>Preview</h2>
+            <p className={`${linkTextColor}`}>{text.length>0?text:"Nothing to preview!"}</p>
         </>
     );
 };
