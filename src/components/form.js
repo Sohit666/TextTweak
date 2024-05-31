@@ -45,6 +45,10 @@ const Form = (props) => {
     return (
         <>
             <div className="mb-3">
+                <div className="container">
+
+            <h1 className={linkTextColor}>Welcome</h1>
+                </div>
                 <label htmlFor="exampleFormControlTextarea1" className={`${linkTextColor}`}>{props.heading}</label>
                 <textarea
                     className="form-control border border-dark"
